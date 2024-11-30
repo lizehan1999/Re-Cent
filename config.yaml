@@ -1,0 +1,42 @@
+# Model Configuration
+model_name: "./BERT_MODELS/deberta-v3-base"
+device: "0"
+max_width: 12
+hidden_size: 768
+dropout: 0.4
+
+# Training Parameters
+num_epochs: 10
+train_batch_size: 32
+warmup_ratio: 0.1
+
+# loss function
+loss_alpha: -1
+loss_gamma: 0
+loss_beta: 0.5
+
+# Learning Rate and weight decay Configuration
+lr_encoder: 1e-5
+lr_others: 3e-5
+weight_decay_encoder: 0.01
+weight_decay_other: 0.01
+max_grad_norm: 1.0
+
+# Directory Paths
+data_dir: "/data"
+dataset: "/fewrel"
+rel_num: "m15"
+seed_num: 5
+log_dir: "logs/fewrel_m15"
+
+# Advanced Training Settings
+max_types: 15
+shuffle_types: true
+random_drop: true
+max_neg_type_ratio: 2
+so_neg_num: 5
+max_len: 100
+
+decoder_threshold: 0.2
+ent2triplet_gamma: 1.3
+
