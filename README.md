@@ -21,7 +21,13 @@ The main requirements are:
 ## Cite
 
 ```
--
+@inproceedings{Re-Cent,
+  title={Re-Cent: A Relation-Centric Framework for Joint Zero-Shot Relation Triplet Extraction},
+  author={Li, Zehan and Zhang, Fu and Lyu, Kailun and Cheng, Jingwei and Peng, Tianyue},
+  booktitle={Proceedings of the 31st International Conference on Computational Linguistics},
+  pages={7344--7354},
+  year={2025}
+}
 ```
 
 
